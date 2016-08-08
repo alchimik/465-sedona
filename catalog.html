@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Седона</title>
+</head>
+<body>
+
+<header>
+    <nav class="main-navigation">
+        <ul>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#"><img src="img/header-logo.jpg" alt="Седона"></a></li>
+            <li><a href="#">Карта штата</a></li>
+            <li><a href="#">Гостиница</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="search-form-box">
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="field-infrastructure-block">
+                Инфраструктура:
+
+                <label>
+                    <input type="checkbox" name="infrastructure" value="pool" checked>
+                    Бассейн
+                </label>
+
+                <label>
+                    <input type="checkbox" name="infrastructure" value="parking">
+                    Парковка
+                </label>
+
+                <label>
+                    <input type="checkbox" name="infrastructure" value="wifi">
+                    Wi-Fi
+                </label>
+            </div>
+
+            <div class="field-housing-type-block">
+                Тип жилья:
+
+                <label>
+                    <input type="checkbox" name="housing_type" value="hotel" checked>
+                    Гостиница
+                </label>
+
+                <label>
+                    <input type="checkbox" name="housing_type" value="motel" checked>
+                    Мотель
+                </label>
+
+                <label>
+                    <input type="checkbox" name="housing_type" value="apartments" checked>
+                    Апартаменты
+                </label>
+            </div>
+
+            <div class="field-price-block">
+                <label for="field-price-range">
+                    Стоимость в сутки (р):
+                </label>
+                <div class="selected-price-range">
+                    <div class="selected-price-from">от 0</div>
+                    <div class="selected-price-to">До 3000</div>
+                </div>
+
+                <input id="field-price-range" type="range" name="price-range">
+
+                <button type="submit">Показать</button>
+            </div>
+        </form>
+    </div>
+
+    <table class="search-result">
+        <thead>
+        <tr>
+            <td class="search-result-count">
+                Найдено: 3
+            </td>
+            <td class="sorting">
+                Сортировка:
+                <ul>
+                    <li class="active"><a href="#">По цене</a></li>
+                    <li><a href="#">По типу</a></li>
+                    <li><a href="#">по рейтенгу</a></li>
+                </ul>
+            </td>
+            <td class="sorting-direction">
+                <a href="#" class="sorting-direction-asc"></a>
+                <a href="#" class="sorting-direction-desc active"></a>
+            </td>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr class="search-result-item">
+            <td>
+                <img src="">
+            </td>
+            <td>
+                <div class="name">Amara resort & SPA</div>
+                <div class="type">Гостиница</div>
+                <div class="price">от 3500 р.</div>
+
+                <a class="detail" href="#">Подробнее</a>
+                <a class="book" href="#">Заборонировать</a>
+            </td>
+            <td>
+                <div class="starbar">
+                    <button type="button"></button>
+                    <button type="button" class="active"></button>
+                    <button type="button" class="active"></button>
+                    <button type="button" class="active"></button>
+                    <button type="button" class="active"></button>
+                </div>
+
+                <div class="rating">
+                    Рейтинг: 8.5
+                </div>
+            </td>
+        </tr>
+
+        <tr class="search-result-item">
+            <td>
+                <img src="">
+            </td>
+            <td>
+                <div class="name">Desert Quail Inn</div>
+                <div class="type">Мотель</div>
+                <div class="price">от 2000 р.</div>
+
+                <a class="detail" href="#">Подробнее</a>
+                <a class="book" href="#">Заборонировать</a>
+            </td>
+            <td>
+                <div class="starbar">
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button" class="active"></button>
+                    <button type="button" class="active"></button>
+                </div>
+
+                <div class="rating">
+                    Рейтинг: 8.9
+                </div>
+            </td>
+        </tr>
+
+        <tr class="search-result-item">
+            <td>
+                <img src="">
+            </td>
+            <td>
+                <div class="name">Villas at Poco Diablo</div>
+                <div class="type">Апартаменты</div>
+                <div class="price">от 4000 р.</div>
+
+                <a class="detail" href="#">Подробнее</a>
+                <a class="book" href="#">Заборонировать</a>
+            </td>
+            <td>
+                <div class="starbar">
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button" class="active"></button>
+                    <button type="button" class="active"></button>
+                    <button type="button" class="active"></button>
+                </div>
+
+                <div class="rating">
+                    Рейтинг: 9.2
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <div class="footer-hashtag">
+        <a href="#">#visitsedona</a>
+    </div>
+
+    <div class="footer-media">
+        <a class="social-btn social-btn-twitter" href="#"></a>
+        <a class="social-btn social-btn-fb" href="#"></a>
+        <a class="social-btn social-btn-youtube" href="#"></a>
+    </div>
+
+    <div class="footer-copyright">
+        <span>Website by:</span>
+        <a href="https://htmlacademy.ru">
+            <img src="img/htmlacademy-footer-logo.jpg" alt="htmlacademy.ru">
+        </a>
+    </div>
+</footer>
+
+</body>
+</html>
