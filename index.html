@@ -6,182 +6,170 @@
 </head>
 <body>
 
-<header>
-    <nav class="main-navigation">
-        <ul>
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li><a href="#"><img src="img/header-logo.jpg" alt="Седона"></a></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиница</a></li>
-        </ul>
-    </nav>
+<div class="main">
+    <ul class="main-navigation">
+        <li><a class="main-navigation__link" href="#">Информация</a></li>
+        <li><a class="main-navigation__link" href="#">Фото и видео</a></li>
+        <li><a class="main-navigation__logo" href="#"><img src="img/header-logo.jpg" alt="Седона"></a></li>
+        <li><a class="main-navigation__link" href="#">Карта штата</a></li>
+        <li><a class="main-navigation__link" href="#">Гостиница</a></li>
+    </ul>
 
-    <h1>
-        <span class="hide">Седона</span>
-        <img class="big-logo" src="img/big-logo.jpg">
+    <h1 class="main-header">
+        <span class="main-header__text">Седона</span>
+        <img class="main-header__logo" src="img/big-logo.jpg">
     </h1>
-</header>
 
-<main>
-    <div class="about-block">
-        <h2>
+    <section class="about">
+        <h2 class="about__header">
             СЕДОНА — небольшой городок в АРИЗОНЕ, <br>
             заслуживающий большего!
         </h2>
-        <p>
+        <p class="about__description">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
-    </div>
+    </section>
 
-    <div class="feature-block real-life">
-        <div class="feature-item">
-            <b class="feature-name">Настоящий город</b>
-            <div class="feature-number">&ndash; №1 &ndash;</div>
-            <p class="feature-description">
+    <section class="big-feature real-life">
+        <div class="feature">
+            <b class="feature__name">Настоящий город</b>
+            <div class="feature__number">&ndash; №1 &ndash;</div>
+            <p class="feature__description">
                 Седона - не аттракцион для туристов, там течет своя жизнь
             </p>
         </div>
 
-        <img class="feature-photo" src="img/real-life.jpg">
-    </div>
+        <img class="big-feature__photo" src="img/real-life.jpg">
+    </section>
 
-    <ul class="real-life-list">
+    <ul class="real-life">
         <li>
-            <b class="real-life-housing">Жилье</b>
+            <b class="real-life__housing">Жилье</b>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li>
-            <b class="real-life-food">Еда</b>
+            <b class="real-life__food">Еда</b>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
-            <b class="real-life-souvenirs">Сувениры</b>
+            <b class="real-life__souvenirs">Сувениры</b>
             <p>Не только китайского, но и местного производства!</p>
         </li>
     </ul>
 
-    <div class="feature-block devil-bridge">
-        <img class="feature-photo" src="img/devil-bridge.jpg">
+    <section class="big-feature devil-bridge">
+        <img class="big-feature__photo" src="img/devil-bridge.jpg">
 
-        <div class="feature-item">
-            <b class="feature-name">Там есть мост дьявола</b>
-            <div class="feature-number">&ndash; №2 &ndash;</div>
-            <p class="feature-description">
+        <div class="feature">
+            <b class="feature__name">Там есть мост дьявола</b>
+            <div class="feature__number">&ndash; №2 &ndash;</div>
+            <p class="feature__description">
                 Да, по нему можно пройти! Если конечно вы осмелитесь
             </p>
         </div>
-    </div>
+    </section>
 
-    <div class="feature-list">
-        <ul>
-            <li class="feature-item">
-                <b class="feature-name">Небольшая площадь</b>
-                <div class="feature-number">&ndash; №3 &ndash;</div>
-                <p class="feature-description">
-                    Все достопримечательности находятся очень близко
-                </p>
-            </li>
-            <li class="feature-item">
-                <b class="feature-name">Красивая дорога</b>
-                <div class="feature-number">&ndash; №4 &ndash;</div>
-                <p class="feature-description">
-                    Ехать в седону из Лас-Вегаса совсем не скучно!
-                </p>
-            </li>
-            <li class="feature-item">
-                <b class="feature-name">Мало туристов</b>
-                <div class="feature-number">&ndash; №5 &ndash;</div>
-                <p class="feature-description">
-                    Большинство едет в гранд каньон и толпится там
-                </p>
-            </li>
-        </ul>
-    </div>
+    <ul class="feature-list">
+        <li class="feature">
+            <b class="feature__name">Небольшая площадь</b>
+            <div class="feature__number">&ndash; №3 &ndash;</div>
+            <p class="feature__description">
+                Все достопримечательности находятся очень близко
+            </p>
+        </li>
+        <li class="feature">
+            <b class="feature__name">Красивая дорога</b>
+            <div class="feature__number">&ndash; №4 &ndash;</div>
+            <p class="feature__description">
+                Ехать в седону из Лас-Вегаса совсем не скучно!
+            </p>
+        </li>
+        <li class="feature">
+            <b class="feature__name">Мало туристов</b>
+            <div class="feature__number">&ndash; №5 &ndash;</div>
+            <p class="feature__description">
+                Большинство едет в гранд каньон и толпится там
+            </p>
+        </li>
+    </ul>
 
-    <div class="form-intro-block">
-        <b>Заинтересовались?</b>
+    <section class="form-intro">
+        <b class="form-intro__header">Заинтересовались?</b>
 
-        <p>
+        <p class="form-intro__description">
             Укажите предполагаемые даты поездки, <br>
             И мы покажем Вам лучшие предложения гостиниц в Седоне
         </p>
 
-        <a href="#">Поиск гостиницы в Седоне</a>
-    </div>
+        <a class="form-intro__link" href="#">Поиск гостиницы в Седоне</a>
+    </section>
 
-    <div>
-        <img src="img/static-map.jpg" alt="Карты Седоны">
+    <section class="bottom-section">
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <!-- TO_DO переписать без таблиц -->
+            <table>
+                <tbody>
+                <tr>
+                    <td class="label">
+                        <label for="field-date-in">Дата заезда:</label>
+                    </td>
+                    <td class="field">
+                        <input id="field-date-in" type="date" name="date_in" value="24 апреля 2016">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="field-date-out">Дата выезда:</label>
+                    </td>
+                    <td class="field">
+                        <input id="field-date-out" type="date" name="date_out" value="4 июля 2016">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="field-adult-place">Взрослые:</label>
+                    </td>
+                    <td class="field">
+                        <div class="field-adult-place-block">
+                            <div class="field-sub">-</div>
+                            <input id="field-adult-place" type="number" name="adult_place" value="2">
+                            <div class="field-add">+</div>
+                        </div>
 
-        <div class="form-block">
-            <form action="https://echo.htmlacademy.ru" method="post">
+                        <label for="field-child-place">
+                            Дети:
+                        </label>
+                        <div class="field-adult-child-block">
+                            <div class="field-sub">-</div>
+                            <input id="field-child-place" type="number" name="child_place" value="0">
+                            <div class="field-add">+</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
 
-                <table>
-                    <tbody>
-                    <tr>
-                        <td class="label">
-                            <label for="field=date-in">Дата заезда:</label>
-                        </td>
-                        <td class="field">
-                            <input id="field=date-in" type="date" name="date_in" value="24 апреля 2016">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="label">
-                            <label for="field-date-out">Дата выезда:</label>
-                        </td>
-                        <td class="field">
-                            <input id="field-date-out" type="date" name="date_out" value="4 июля 2016">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="label">
-                            <label for="field-adult-place">Взрослые:</label>
-                        </td>
-                        <td class="field">
-                            <div class="field-adult-place-block">
-                                <div class="field-sub">-</div>
-                                <input id="field-adult-place" type="number" name="adult_place" value="2">
-                                <div class="field-add">+</div>
-                            </div>
+            <button type="submit">Найти</button>
+        </form>
 
-                            <label for="field-child-place">
-                                Дети:
-                            </label>
-                            <div class="field-adult-child-block">
-                                <div class="field-sub">-</div>
-                                <input id="field-child-place" type="number" name="child_place" value="0">
-                                <div class="field-add">+</div>
-                            </div>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+        <footer class="footer">
+            <a class="footer__hashtag" href="#">#visitsedona</a>
 
-                <button type="submit">Найти</button>
-            </form>
-        </div>
-
-        <div class="footer">
-            <div class="footer-hashtag">
-                <a href="#">#visitsedona</a>
+            <div class="footer__social">
+                <a class="social-btn social-btn--twitter" href="#"></a>
+                <a class="social-btn social-btn--fb" href="#"></a>
+                <a class="social-btn social-btn--youtube" href="#"></a>
             </div>
 
-            <div class="footer-media">
-                <a class="social-btn social-btn-twitter" href="#"></a>
-                <a class="social-btn social-btn-fb" href="#"></a>
-                <a class="social-btn social-btn-youtube" href="#"></a>
-            </div>
-
-            <div class="footer-copyright">
+            <div class="footer__copyright">
                 <span>Website by:</span>
                 <a href="https://htmlacademy.ru">
                     <img src="img/htmlacademy-footer-logo.jpg" alt="htmlacademy.ru">
                 </a>
             </div>
-        </div>
-    </div>
-</main>
+        </footer>
+    </section>
+</div>
 
 </body>
 </html>
