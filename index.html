@@ -1,12 +1,175 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+<head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
+    <title>Седона</title>
+</head>
+<body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+<div class="main">
+    <ul class="main-navigation">
+        <li><a class="main-navigation__link" href="#">Информация</a></li>
+        <li><a class="main-navigation__link" href="#">Фото и видео</a></li>
+        <li><a class="main-navigation__logo" href="#"><img src="img/header-logo.jpg" alt="Седона"></a></li>
+        <li><a class="main-navigation__link" href="#">Карта штата</a></li>
+        <li><a class="main-navigation__link" href="#">Гостиница</a></li>
+    </ul>
 
-  </body>
+    <h1 class="main-header">
+        <span class="main-header__text">Седона</span>
+        <img class="main-header__logo" src="img/big-logo.jpg">
+    </h1>
+
+    <section class="about">
+        <h2 class="about__header">
+            СЕДОНА — небольшой городок в АРИЗОНЕ, <br>
+            заслуживающий большего!
+        </h2>
+        <p class="about__description">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+    </section>
+
+    <section class="big-feature real-life">
+        <div class="feature">
+            <b class="feature__name">Настоящий город</b>
+            <div class="feature__number">&ndash; №1 &ndash;</div>
+            <p class="feature__description">
+                Седона - не аттракцион для туристов, там течет своя жизнь
+            </p>
+        </div>
+
+        <img class="big-feature__photo" src="img/real-life.jpg">
+    </section>
+
+    <ul class="real-life">
+        <li>
+            <b class="real-life__housing">Жилье</b>
+            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </li>
+        <li>
+            <b class="real-life__food">Еда</b>
+            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </li>
+        <li>
+            <b class="real-life__souvenirs">Сувениры</b>
+            <p>Не только китайского, но и местного производства!</p>
+        </li>
+    </ul>
+
+    <section class="big-feature devil-bridge">
+        <img class="big-feature__photo" src="img/devil-bridge.jpg">
+
+        <div class="feature">
+            <b class="feature__name">Там есть мост дьявола</b>
+            <div class="feature__number">&ndash; №2 &ndash;</div>
+            <p class="feature__description">
+                Да, по нему можно пройти! Если конечно вы осмелитесь
+            </p>
+        </div>
+    </section>
+
+    <ul class="feature-list">
+        <li class="feature">
+            <b class="feature__name">Небольшая площадь</b>
+            <div class="feature__number">&ndash; №3 &ndash;</div>
+            <p class="feature__description">
+                Все достопримечательности находятся очень близко
+            </p>
+        </li>
+        <li class="feature">
+            <b class="feature__name">Красивая дорога</b>
+            <div class="feature__number">&ndash; №4 &ndash;</div>
+            <p class="feature__description">
+                Ехать в седону из Лас-Вегаса совсем не скучно!
+            </p>
+        </li>
+        <li class="feature">
+            <b class="feature__name">Мало туристов</b>
+            <div class="feature__number">&ndash; №5 &ndash;</div>
+            <p class="feature__description">
+                Большинство едет в гранд каньон и толпится там
+            </p>
+        </li>
+    </ul>
+
+    <section class="form-intro">
+        <b class="form-intro__header">Заинтересовались?</b>
+
+        <p class="form-intro__description">
+            Укажите предполагаемые даты поездки, <br>
+            И мы покажем Вам лучшие предложения гостиниц в Седоне
+        </p>
+
+        <a class="form-intro__link" href="#">Поиск гостиницы в Седоне</a>
+    </section>
+
+    <section class="bottom-section">
+        <form action="https://echo.htmlacademy.ru" method="post">
+            <!-- TO_DO переписать без таблиц -->
+            <table>
+                <tbody>
+                <tr>
+                    <td class="label">
+                        <label for="field-date-in">Дата заезда:</label>
+                    </td>
+                    <td class="field">
+                        <input id="field-date-in" type="date" name="date_in" value="24 апреля 2016">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="field-date-out">Дата выезда:</label>
+                    </td>
+                    <td class="field">
+                        <input id="field-date-out" type="date" name="date_out" value="4 июля 2016">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="label">
+                        <label for="field-adult-place">Взрослые:</label>
+                    </td>
+                    <td class="field">
+                        <div class="field-adult-place-block">
+                            <div class="field-sub">-</div>
+                            <input id="field-adult-place" type="number" name="adult_place" value="2">
+                            <div class="field-add">+</div>
+                        </div>
+
+                        <label for="field-child-place">
+                            Дети:
+                        </label>
+                        <div class="field-adult-child-block">
+                            <div class="field-sub">-</div>
+                            <input id="field-child-place" type="number" name="child_place" value="0">
+                            <div class="field-add">+</div>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+            <button type="submit">Найти</button>
+        </form>
+
+        <footer class="footer">
+            <a class="footer__hashtag" href="#">#visitsedona</a>
+
+            <div class="footer__social">
+                <a class="social-btn social-btn--twitter" href="#"></a>
+                <a class="social-btn social-btn--fb" href="#"></a>
+                <a class="social-btn social-btn--youtube" href="#"></a>
+            </div>
+
+            <div class="footer__copyright">
+                <span>Website by:</span>
+                <a href="https://htmlacademy.ru">
+                    <img src="img/htmlacademy-footer-logo.jpg" alt="htmlacademy.ru">
+                </a>
+            </div>
+        </footer>
+    </section>
+</div>
+
+</body>
 </html>
