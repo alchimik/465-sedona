@@ -1,0 +1,28 @@
+body {
+    font-family: "PTSans", serif;
+    font-size: 14px;
+    line-height: 21px;
+    color: black;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-family: "PTSans", serif;
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    font-weight: bold;
+}
+
+.feature__name, .real-life__name {
+    font-family: "PTSans", serif;
+    font-size: 21px;
+    line-height: 21px;
+    color: black;
+    font-weight: bold;
+}
+
+.big-feature .feature__name {
+    color: white;
+}
