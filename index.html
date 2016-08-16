@@ -4,74 +4,86 @@
     <meta charset="utf-8">
     <title>Седона</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 
 <div class="main">
-    <ul class="main-navigation">
-        <li><a class="main-navigation__link" href="#">Информация</a></li>
-        <li><a class="main-navigation__link" href="#">Фото и видео</a></li>
-        <li>
-            <a class="main-navigation__logo" href="#">
+    <div class="top-panel">
+        <ul class="main-navigation">
+            <li><a class="main-navigation__link" href="#">Информация</a></li>
+            <li><a class="main-navigation__link" href="#">Фото и видео</a></li>
+            <li></li>
+            <li><a class="main-navigation__link" href="#">Карта штата</a></li>
+            <li><a class="main-navigation__link" href="#">Гостиница</a></li>
+        </ul>
+
+        <div class="main-navigation__logo-box">
+            <a href="#">
                 <img src="img/main-navigation__logo.png" alt="Седона" width="138" height="70">
             </a>
-        </li>
-        <li><a class="main-navigation__link" href="#">Карта штата</a></li>
-        <li><a class="main-navigation__link" href="#">Гостиница</a></li>
-    </ul>
+        </div>
+    </div>
 
     <h1 class="main-header">
-        <span class="main-header__text">Седона</span>
+        <span class="main-header__text hide">Седона</span>
         <img class="main-header__welcome" src="img/index/main-header__welcome.png" width="256" height="86">
-        <img class="main-header__sedona" src="img/index/main-header__sedona.gif" width="458" height="78">
-        <img class="main-header__grand-canyon" src="img/index/main-header__grand-canyon.gif" width="296" height="80">
+        <img class="main-header__sedona" src="img/index/main-header__sedona.png" width="458" height="78">
+        <img class="main-header__grand-canyon" src="img/index/main-header__grand-canyon.png" width="296" height="80">
+
+        <img class="main-header__bottom-pattern" src="img/index/big-header-background__bottom-pattern.png"
+             width="1200" height="57">
     </h1>
 
-    <section class="about">
-        <h2 class="about__header">
+    <section class="main-desc">
+        <h2 class="main-desc__header">
             СЕДОНА — небольшой городок в АРИЗОНЕ, <br>
             заслуживающий большего!
         </h2>
-        <p class="about__description">
+        <p class="main-desc__why">
             Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
         </p>
     </section>
 
-    <section class="big-feature real-life">
+    <section class="big-feature big-feature--real-life clearfix">
         <div class="feature">
-            <b class="feature__name">Настоящий город</b>
+            <h2 class="feature__name">Настоящий город</h2>
             <div class="feature__number">&ndash; №1 &ndash;</div>
             <p class="feature__description">
                 Седона - не аттракцион для туристов, там течет своя жизнь
             </p>
         </div>
 
-        <img class="big-feature__photo" src="img/index/real-life__photo.jpg" width="800" height="400">
+        <div class="big-feature__photo">
+            <img src="img/index/real-life__photo.jpg" width="800" height="400">
+        </div>
     </section>
 
-    <ul class="real-life">
+    <ul class="real-life clearfix">
         <li>
             <img src="img/index/real-life__housing-icon.png" width="75" height="72">
-            <b class="real-life__name">Жилье</b>
+            <h3 class="real-life__name">Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
         <li>
             <img src="img/index/real-life__food-icon.png" width="74" height="70">
-            <b class="real-life__name">Еда</b>
+            <h3 class="real-life__name">Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
         <li>
             <img src="img/index/real-life__souvenirs-icon.png" width="64" height="76">
-            <b class="real-life__name">Сувениры</b>
+            <h3 class="real-life__name">Сувениры</h3>
             <p>Не только китайского, но и местного производства!</p>
         </li>
     </ul>
 
-    <section class="big-feature devil-bridge">
-        <img class="big-feature__photo" src="img/index/devil-bridge__photo.jpg" width="800" height="400">
+    <section class="big-feature big-feature--devil-bridge clearfix">
+        <div class="big-feature__photo">
+            <img src="img/index/devil-bridge__photo.jpg" width="800" height="400">
+        </div>
 
         <div class="feature">
-            <b class="feature__name">Там есть мост дьявола</b>
+            <h2 class="feature__name">Там есть мост дьявола</h2>
             <div class="feature__number">&ndash; №2 &ndash;</div>
             <p class="feature__description">
                 Да, по нему можно пройти! Если конечно вы осмелитесь
@@ -79,23 +91,23 @@
         </div>
     </section>
 
-    <ul class="feature-list">
+    <ul class="feature-list clearfix">
         <li class="feature">
-            <b class="feature__name">Небольшая площадь</b>
+            <h2 class="feature__name">Небольшая площадь</h2>
             <div class="feature__number">&ndash; №3 &ndash;</div>
             <p class="feature__description">
                 Все достопримечательности находятся очень близко
             </p>
         </li>
         <li class="feature">
-            <b class="feature__name">Красивая дорога</b>
+            <h2 class="feature__name">Красивая дорога</h2>
             <div class="feature__number">&ndash; №4 &ndash;</div>
             <p class="feature__description">
                 Ехать в седону из Лас-Вегаса совсем не скучно!
             </p>
         </li>
         <li class="feature">
-            <b class="feature__name">Мало туристов</b>
+            <h2 class="feature__name">Мало туристов</h2>
             <div class="feature__number">&ndash; №5 &ndash;</div>
             <p class="feature__description">
                 Большинство едет в гранд каньон и толпится там
@@ -111,7 +123,7 @@
             И мы покажем Вам лучшие предложения гостиниц в Седоне
         </p>
 
-        <a class="form-intro__link" href="#">Поиск гостиницы в Седоне</a>
+        <a class="form-intro__link" href="#"><strong>Поиск гостиницы в Седоне</strong></a>
     </section>
 
     <section class="bottom-section">
@@ -162,16 +174,17 @@
             <button type="submit">Найти</button>
         </form>
 
-        <footer class="footer">
-            <a class="footer__hashtag" href="#">#visitsedona</a>
+        <footer class="footer footer--index clearfix">
+            <a class="footer-column footer__hashtag" href="#">#visitsedona</a>
 
-            <div class="footer__social">
+            <div class="footer-column footer__social">
+                links
                 <a class="social-btn social-btn--twitter" href="#"></a>
                 <a class="social-btn social-btn--fb" href="#"></a>
                 <a class="social-btn social-btn--youtube" href="#"></a>
             </div>
 
-            <div class="footer__copyright">
+            <div class="footer-column footer__copyright">
                 <span>Website by:</span>
                 <a href="https://htmlacademy.ru">
                     <img src="img/footer__htmlacademy-logo.png" alt="htmlacademy.ru" width="113" height="39">

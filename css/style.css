@@ -5,14 +5,28 @@ body {
     color: black;
     font-weight: normal;
     text-transform: uppercase;
+
+    /*background: #ededed;*/
+    /*background: #000000 url("../img/sedona-index-1200.jpg") no-repeat 50% 0;!* tmp *!*/
 }
 
-h2 {
+.hide {
+    display: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.main-desc__header {
     font-family: "PTSans", serif;
     font-size: 21px;
     line-height: 26px;
     color: black;
     font-weight: bold;
+    margin: 0 0 35px 0;
 }
 
 .feature__name, .real-life__name {
@@ -25,4 +39,291 @@ h2 {
 
 .big-feature .feature__name {
     color: white;
+}
+
+
+.main {
+    min-width: 768px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* tmp */
+}
+
+.main-navigation {
+    background-color: white;
+    margin: 0;
+    padding: 20px 0 0 0;
+    height: 36px;
+
+    font-size: 0;
+}
+
+.main-navigation > li {
+    display: inline-block;
+    width: 20%;
+
+    text-align: center;
+    font-size: 14px;
+}
+
+.main-navigation > li:nth-child(1) {
+    margin-left: 6%
+}
+
+.main-navigation > li:nth-child(1), .main-navigation > li:nth-child(2) {
+    text-align: left;
+}
+
+.main-navigation > li:nth-child(5) {
+    margin-right: 6%;
+}
+
+.main-navigation > li:nth-child(4), .main-navigation > li:nth-child(5) {
+    text-align: right;
+}
+
+.main-navigation > li:nth-child(3) {
+    width: 8%;
+}
+
+.main-navigation__logo-box {
+    margin-top: -56px;
+    height: 56px;
+    text-align: center;
+}
+
+.main-header {
+    background: white url(../img/index/big-header-background.jpg);
+    margin: 0;
+    padding-top: 76px;
+    height: 510px;
+}
+
+.main-header__welcome {
+    margin: 0 auto 52px auto;
+    display: block;
+}
+
+.main-header__sedona {
+    margin: 0 auto 56px auto;
+    display: block;
+}
+
+.main-header__grand-canyon {
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.main-header__bottom-pattern {
+    margin-top: 101px;
+}
+
+.main-header__bottom-pattern {
+    width: 100%;
+}
+
+.main-desc {
+    height: 110px;
+    padding-top: 61px;
+    padding-bottom: 50px;
+
+    text-align: center;
+    background-color: white;
+}
+
+.big-feature {
+    height: 256px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.big-feature .feature {
+    background-color: #81b3d2;
+    width: 34%;
+    height: 100%;
+}
+
+.big-feature--real-life .feature {
+    float: left;
+}
+
+.big-feature--devil-bridge .feature {
+    float: right;
+}
+
+.big-feature__photo {
+    width: 66%;
+    height: 100%;
+    position: relative;
+}
+
+.big-feature__photo img {
+    position: absolute;
+    left: 50%;
+    top: 54%;
+    transform: translate(-50%, -54%);
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+.big-feature--real-life .big-feature__photo {
+    float: right;
+}
+
+.big-feature--devil-bridge  .big-feature__photo {
+    float: left;
+}
+
+.feature-list .feature, .real-life li {
+    display: block;
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+.real-life {
+    background-color: white;
+    margin: 0;
+    padding-top: 60px;
+    padding-bottom: 85px;
+}
+
+.feature-list {
+    padding-top: 45px;
+    padding-bottom: 65px;
+    margin: 0;
+
+    background-color: #eeeeee;
+}
+
+.form-intro {
+    padding-top: 55px;
+    text-align: center;
+
+    background-color: white;
+}
+
+.form-intro__header {
+    display: block;
+    margin-bottom: 35px;
+}
+
+.form-intro__description {
+    margin-bottom: 50px;
+}
+
+.form-intro__link {
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.bottom-section {
+    background: white url(../img/static-map.jpg);
+}
+
+.bottom-section form {
+    width: 569px;
+    height: 395px;
+    margin: 0 auto;
+
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* tmp */
+}
+
+.footer.footer--index {
+    margin-top: 78px;
+    background-color: rgba(256, 256, 256, 0.9);
+}
+
+.footer {
+    padding: 35px 0;
+    background-color: white;
+}
+
+.footer-column {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+}
+
+
+.search-form {
+    padding: 25px 6% 30px 6%;
+    box-sizing: border-box;
+
+    background: gray url(../img/catalog/search-form__background.jpg);
+    min-height: 217px;
+}
+
+.search-form__infrastructure {
+    float: left;
+    width: 220px;
+    margin-right: 6%;
+}
+
+.search-form__housing-type {
+    float: left;
+    width: 30%;
+}
+
+.search-form__price {
+    float: right;
+    width: 30%;
+}
+
+.catalog-header {
+    padding: 30px 6%;
+}
+
+.catalog-header__count {
+    float: left;
+    margin-right: 40px;
+}
+
+.catalog-header__sort-field {
+    float: left;
+}
+
+.catalog-header__sort-field > ul {
+    display: inline;
+}
+
+.catalog-header__sort-field > ul > li {
+    display: inline;
+}
+
+.catalog-header__sort-dir {
+    float: right;
+}
+
+.catalog-item {
+    padding: 30px 6%;
+    border-top: 1px solid #e5e5e5;
+}
+
+.catalog-item:last-child {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-item__photo {
+    float: left;
+    margin-right: 42px;
+}
+
+.catalog-item__description {
+    float: left;
+}
+
+.catalog-item__rate-block {
+    float: right;
+}
+
+.catalog-item__stars {
+    text-align: right;
 }
