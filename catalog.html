@@ -3,23 +3,29 @@
 <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
 
 <div class="main">
-    <ul class="main-navigation">
-        <li><a class="main-navigation__link" href="#">Информация</a></li>
-        <li><a class="main-navigation__link" href="#">Фото и видео</a></li>
-        <li>
-            <a class="main-navigation__logo" href="#">
+    <div class="top-panel">
+        <ul class="main-navigation">
+            <li><a class="main-navigation__link" href="#">Информация</a></li>
+            <li><a class="main-navigation__link" href="#">Фото и видео</a></li>
+            <li></li>
+            <li><a class="main-navigation__link" href="#">Карта штата</a></li>
+            <li><a class="main-navigation__link" href="#">Гостиница</a></li>
+        </ul>
+
+        <div class="main-navigation__logo-box">
+            <a href="#">
                 <img src="img/main-navigation__logo.png" alt="Седона" width="138" height="70">
             </a>
-        </li>
-        <li><a class="main-navigation__link" href="#">Карта штата</a></li>
-        <li><a class="main-navigation__link" href="#">Гостиница</a></li>
-    </ul>
+        </div>
+    </div>
 
-    <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="search-form clearfix" action="https://echo.htmlacademy.ru" method="post">
         <div class="search-form__infrastructure">
             Инфраструктура:
 
@@ -74,7 +80,7 @@
     </form>
 
     <section class="catalog">
-        <div class="catalog__header">
+        <div class="catalog-header clearfix">
             <div class="catalog-header__count">
                 Найдено: 3
             </div>
@@ -93,75 +99,69 @@
             </div>
         </div>
 
-        <div class="catalog__body">
-            <article class="catalog__item">
-                <img class="catalog__item__photo" src="img/catalog/item_1.jpg" width="135" height="90">
+        <div class="catalog-body">
+            <article class="catalog-item clearfix">
+                <img class="catalog-item__photo" src="img/catalog/item_1.jpg" width="135" height="90">
 
-                <section class="catalog__item__description">
-                    <div class="catalog__item__name">Amara resort & SPA</div>
-                    <div class="catalog__item__type">Гостиница</div>
-                    <div class="catalog__item__price">от 3500 р.</div>
+                <section class="catalog-item__description">
+                    <div class="catalog-item__name">Amara resort & SPA</div>
+                    <div class="catalog-item__type">Гостиница</div>
+                    <div class="catalog-item__price">от 3500 р.</div>
 
-                    <a class="catalog__item__detail" href="#">Подробнее</a>
-                    <a class="catalog__item__book" href="#">Заборонировать</a>
+                    <a class="catalog-item__detail-link" href="#">Подробнее</a>
+                    <a class="catalog-item__book-link" href="#">Заборонировать</a>
                 </section>
 
-                <section class="catalog__item__rate">
-                    <ul class="catalog__item__rate__stars">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <section class="catalog-item__rate-block">
+                    <div class="catalog-item__stars">
+                        ****
+                    </div>
 
-                    <div class="catalog__item__rate__rating">
+                    <div class="catalog-item__rating">
                         Рейтинг: 8.5
                     </div>
                 </section>
             </article>
 
-            <article class="catalog__item">
-                <img class="catalog__item__photo" src="img/catalog/item_2.jpg" width="135" height="90">
-                <section class="catalog__item__description">
-                    <div class="catalog__item__name">Desert Quail Inn</div>
-                    <div class="catalog__item__type">Мотель</div>
-                    <div class="catalog__item__price">от 2000 р.</div>
+            <article class="catalog-item clearfix">
+                <img class="catalog-item__photo" src="img/catalog/item_2.jpg" width="135" height="90">
+                <section class="catalog-item__description">
+                    <div class="catalog-item__name">Desert Quail Inn</div>
+                    <div class="catalog-item__type">Мотель</div>
+                    <div class="catalog-item__price">от 2000 р.</div>
 
-                    <a class="catalog__item__detail" href="#">Подробнее</a>
-                    <a class="catalog__item__book" href="#">Заборонировать</a>
+                    <a class="catalog-item__detail-link" href="#">Подробнее</a>
+                    <a class="catalog-item__book-link" href="#">Заборонировать</a>
                 </section>
 
-                <section class="catalog__item__rate">
-                    <ul class="catalog__item__rate__stars">
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <section class="catalog-item__rate-block">
+                    <div class="catalog-item__stars">
+                        **
+                    </div>
 
-                    <div class="catalog__item__rate__rating">
+                    <div class="catalog-item__rating">
                         Рейтинг: 8.9
                     </div>
                 </section>
             </article>
 
-            <article class="catalog__item">
-                <img class="catalog__item__photo" src="img/catalog/item_3.jpg">
-                <section class="catalog__item__description">
-                    <div class="catalog__item__name">Villas at Poco Diablo</div>
-                    <div class="catalog__item__type">Апартаменты</div>
-                    <div class="catalog__item__price">от 4000 р.</div>
+            <article class="catalog-item clearfix">
+                <img class="catalog-item__photo" src="img/catalog/item_3.jpg">
+                <section class="catalog-item__description">
+                    <div class="catalog-item__name">Villas at Poco Diablo</div>
+                    <div class="catalog-item__type">Апартаменты</div>
+                    <div class="catalog-item__price">от 4000 р.</div>
 
-                    <a class="catalog__item__detail" href="#">Подробнее</a>
-                    <a class="catalog__item__book" href="#">Заборонировать</a>
+                    <a class="catalog-item__detail-link" href="#">Подробнее</a>
+                    <a class="catalog-item__book-link" href="#">Заборонировать</a>
                 </section>
 
-                <section class="catalog__item__rate">
-                    <ul class="catalog__item__rate__stars">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <section class="catalog-item__rate-block">
+                    <div class="catalog-item__stars">
+                        ***
+                    </div>
 
-                    <div class="catalog__item__rate__rating">
+                    <div class="catalog-item__rating">
                         Рейтинг: 9.2
                     </div>
                 </section>
@@ -169,16 +169,17 @@
         </div>
     </section>
 
-    <footer class="footer">
-        <a class="footer__hashtag" href="#">#visitsedona</a>
+    <footer class="footer clearfix">
+        <a class="footer-column footer__hashtag" href="#">#visitsedona</a>
 
-        <div class="footer__social">
+        <div class="footer-column footer__social">
+            links
             <a class="social-btn social-btn--twitter" href="#"></a>
             <a class="social-btn social-btn--fb" href="#"></a>
             <a class="social-btn social-btn--youtube" href="#"></a>
         </div>
 
-        <div class="footer__copyright">
+        <div class="footer-column footer__copyright">
             <span>Website by:</span>
             <a href="https://htmlacademy.ru">
                 <img src="img/footer__htmlacademy-logo.png" alt="htmlacademy.ru" width="113" height="39">
