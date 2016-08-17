@@ -1,0 +1,15 @@
+# Default application configuration that all configurations inherit from.
+
+linters:
+  PropertySortOrder:
+    enabled: true
+    ignore_unspecified: false
+    min_properties: 2
+    order: recess
+    separate_groups: true
+  StringQuotes:
+      enabled: true
+      style: double_quotes
+  SelectorFormat:
+      enabled: true
+      convention: hyphenated_BEM

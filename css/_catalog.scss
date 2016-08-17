@@ -1,0 +1,79 @@
+.search-form {
+  @extend %clearfix;
+
+  min-height: 217px;
+  padding: 25px 6% 30px 6%;
+  background: gray url("../img/catalog/search-form__background.jpg");
+  box-sizing: border-box;
+}
+
+.search-form__infrastructure {
+  float: left;
+  width: 220px;
+  margin-right: 6%;
+}
+
+.search-form__housing-type {
+  float: left;
+  width: 30%;
+}
+
+.search-form__price {
+  float: right;
+  width: 30%;
+}
+
+.catalog-header {
+  @extend %clearfix;
+
+  padding: 30px 6%;
+}
+
+.catalog-header__count {
+  float: left;
+  margin-right: 40px;
+}
+
+.catalog-header__sort-field {
+  float: left;
+
+  > ul {
+    display: inline;
+
+    > li {
+      display: inline;
+    }
+  }
+}
+
+.catalog-header__sort-dir {
+  float: right;
+}
+
+.catalog-item {
+  @extend %clearfix;
+
+  padding: 30px 6%;
+  border-top: 1px solid #e5e5e5;
+}
+
+.catalog-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.catalog-item__photo {
+  float: left;
+  margin-right: 42px;
+}
+
+.catalog-item__description {
+  float: left;
+}
+
+.catalog-item__rate-block {
+  float: right;
+}
+
+.catalog-item__stars {
+  text-align: right;
+}

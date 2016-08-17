@@ -1,0 +1,155 @@
+.main-header {
+  height: 510px;
+  padding-top: 76px;
+  margin: 0;
+  background: white url("../img/index/big-header-background.jpg");
+}
+
+.main-header__welcome {
+  display: block;
+  margin: 0 auto 52px auto;
+}
+
+.main-header__sedona {
+  display: block;
+  margin: 0 auto 56px auto;
+}
+
+.main-header__grand-canyon {
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.main-header__bottom-pattern {
+  width: 100%;
+  margin-top: 101px;
+}
+
+.main-desc {
+  height: 110px;
+  padding-top: 61px;
+  padding-bottom: 50px;
+
+  text-align: center;
+  background-color: white;
+}
+
+.big-feature {
+  @extend %clearfix;
+
+  height: 256px;
+  overflow: hidden;
+  text-align: center;
+
+  .feature {
+    width: 34%;
+    height: 100%;
+    background-color: #81b3d2;
+  }
+
+  .feature__name {
+    color: white;
+  }
+}
+
+.big-feature--real-life .feature {
+  float: left;
+}
+
+.big-feature--devil-bridge .feature {
+  float: right;
+}
+
+.big-feature__photo {
+  position: relative;
+  width: 66%;
+  height: 100%;
+
+  img {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    width: 100%;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -54%);
+  }
+}
+
+.big-feature--real-life .big-feature__photo {
+  float: right;
+}
+
+.big-feature--devil-bridge .big-feature__photo {
+  float: left;
+}
+
+.feature-list .feature,
+.real-life li {
+  display: block;
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+.real-life {
+  @extend %clearfix;
+
+  padding-top: 60px;
+  padding-bottom: 85px;
+  margin: 0;
+  background-color: white;
+}
+
+.feature-list {
+  @extend %clearfix;
+
+  padding-top: 45px;
+  padding-bottom: 65px;
+  margin: 0;
+
+  background-color: #eeeeee;
+}
+
+.form-intro {
+  padding-top: 55px;
+  text-align: center;
+
+  background-color: white;
+}
+
+.form-intro__header {
+  display: block;
+  margin-bottom: 35px;
+}
+
+.form-intro__description {
+  margin-bottom: 50px;
+}
+
+.form-intro__link {
+  display: block;
+  width: 568px;
+  height: 86px;
+  margin: 0 auto;
+  background-color: #766357;
+}
+
+.bottom-section {
+  background: white url("../img/static-map.jpg");
+
+  form {
+    width: 569px;
+    height: 395px;
+    margin: 0 auto;
+
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* tmp */
+  }
+}
+
+.footer.footer--index {
+  margin-top: 78px;
+  background-color: rgba(256, 256, 256, 0.9);
+}

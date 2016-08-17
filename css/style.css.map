@@ -1,0 +1,6 @@
+{
+"version": 3,
+"sources": ["style.scss","_index.scss","_catalog.scss"],
+"names": [],
+"file": "style.css"
+}
