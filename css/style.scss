@@ -1,5 +1,7 @@
 $black: #000;
 
+$footer-height: 115px;
+
 body {
   font-family: "PTSans", serif;
   font-size: 14px;
@@ -98,8 +100,10 @@ body {
 .footer {
   @extend %clearfix;
 
+  height: $footer-height;
   padding: 35px 0;
   background-color: white;
+  box-sizing: border-box;
 }
 
 .footer-column {

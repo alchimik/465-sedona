@@ -137,6 +137,7 @@
 }
 
 .bottom-section {
+  height: 588px;
   background: white url("../img/static-map.jpg");
 
   form {
@@ -150,6 +151,6 @@
 }
 
 .footer.footer--index {
-  margin-top: 78px;
+  margin-top: -$footer-height;
   background-color: rgba(256, 256, 256, 0.9);
 }
