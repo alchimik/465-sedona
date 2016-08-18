@@ -44,7 +44,7 @@ body {
   padding: 20px 0 0;
   margin: 0;
   font-size: 0;
-  background-color: white; }
+  background-color: #fff; }
   .main-navigation > li {
     display: inline-block;
     width: 20%;
@@ -71,7 +71,7 @@ body {
 .footer {
   height: 115px;
   padding: 35px 0;
-  background-color: white;
+  background-color: #fff;
   box-sizing: border-box; }
 
 .footer-column {
@@ -106,7 +106,7 @@ body {
   padding-top: 61px;
   padding-bottom: 50px;
   text-align: center;
-  background-color: white; }
+  background-color: #fff; }
 
 .big-feature {
   height: 256px;
@@ -117,7 +117,20 @@ body {
     height: 100%;
     background-color: #81b3d2; }
   .big-feature .feature__name {
-    color: white; }
+    margin-top: 50px;
+    color: #fff; }
+
+.feature__name {
+  display: block;
+  width: 180px;
+  margin: 0 auto 30px; }
+
+.feature__number {
+  margin-bottom: 30px; }
+
+.feature__description {
+  width: 78%;
+  margin: 0 auto; }
 
 .big-feature--real-life .feature {
   float: left; }
@@ -156,18 +169,18 @@ body {
   padding-top: 60px;
   padding-bottom: 85px;
   margin: 0;
-  background-color: white; }
+  background-color: #fff; }
 
 .feature-list {
   padding-top: 45px;
   padding-bottom: 65px;
   margin: 0;
-  background-color: #eeeeee; }
+  background-color: #eee; }
 
 .form-intro {
   padding-top: 55px;
   text-align: center;
-  background-color: white; }
+  background-color: #fff; }
 
 .form-intro__header {
   display: block;
@@ -185,14 +198,28 @@ body {
 
 .bottom-section {
   height: 588px;
-  background: white url("../img/static-map.jpg"); }
+  background: #fff url("../img/static-map.jpg"); }
   .bottom-section form {
-    width: 569px;
+    width: 568px;
     height: 395px;
+    padding: 55px;
     margin: 0 auto;
-    background-color: white;
+    background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    /* tmp */ }
+    /* tmp */
+    box-sizing: border-box; }
+    .bottom-section form .column-1 {
+      display: inline-block;
+      width: 112px; }
+    .bottom-section form .date-field {
+      width: 340px;
+      margin-bottom: 30px;
+      box-sizing: border-box; }
+    .bottom-section form .from-submit {
+      width: 458px;
+      height: 48px;
+      background-color: #81b3d2;
+      border: 0; }
 
 .footer.footer--index {
   margin-top: -115px;
@@ -206,8 +233,8 @@ body {
 
 .search-form__infrastructure {
   float: left;
-  width: 220px;
-  margin-right: 6%; }
+  width: 216.11px;
+  margin-right: 3.24%; }
 
 .search-form__housing-type {
   float: left;

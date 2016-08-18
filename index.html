@@ -103,7 +103,9 @@
             <h2 class="feature__name">Красивая дорога</h2>
             <div class="feature__number">&ndash; №4 &ndash;</div>
             <p class="feature__description">
-                Ехать в седону из Лас-Вегаса совсем не скучно!
+                Ехать в седону из
+                <nobr>Лас-Вегаса</nobr>
+                совсем не скучно!
             </p>
         </li>
         <li class="feature">
@@ -131,49 +133,27 @@
     <section class="bottom-section">
         <form action="https://echo.htmlacademy.ru" method="post">
             <!-- TO_DO переписать без таблиц -->
-            <table>
-                <tbody>
-                <tr>
-                    <td class="label">
-                        <label for="field-date-in">Дата заезда:</label>
-                    </td>
-                    <td class="field">
-                        <input id="field-date-in" type="date" name="date_in" value="24 апреля 2016">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">
-                        <label for="field-date-out">Дата выезда:</label>
-                    </td>
-                    <td class="field">
-                        <input id="field-date-out" type="date" name="date_out" value="4 июля 2016">
-                    </td>
-                </tr>
-                <tr>
-                    <td class="label">
-                        <label for="field-adult-place">Взрослые:</label>
-                    </td>
-                    <td class="field">
-                        <div class="field-adult-place-block">
-                            <div class="field-sub">-</div>
-                            <input id="field-adult-place" type="number" name="adult_place" value="2">
-                            <div class="field-add">+</div>
-                        </div>
+            <div>
+                <label class="column-1" for="field-date-in">Дата заезда:</label>
+                <input class="date-field" id="field-date-in" type="date" name="date_in" value="24 апреля 2016">
+            </div>
 
-                        <label for="field-child-place">
-                            Дети:
-                        </label>
-                        <div class="field-adult-child-block">
-                            <div class="field-sub">-</div>
-                            <input id="field-child-place" type="number" name="child_place" value="0">
-                            <div class="field-add">+</div>
-                        </div>
-                    </td>
-                </tr>
-                </tbody>
-            </table>
+            <div>
+                <label class="column-1" for="field-date-out">Дата выезда:</label>
+                <input class="date-field" id="field-date-out" type="date" name="date_out" value="4 июля 2016">
+            </div>
 
-            <button type="submit">Найти</button>
+            <div>
+                <label class="column-1" for="field-adult-place">Взрослые:</label>
+                <input id="field-adult-place" type="number" name="adult_place" value="2">
+
+                <label for="field-child-place">
+                    Дети:
+                </label>
+                <input id="field-child-place" type="number" name="child_place" value="0">
+            </div>
+
+            <button class="from-submit" type="submit">Найти</button>
         </form>
     </section>
 
