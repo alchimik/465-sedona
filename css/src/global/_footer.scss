@@ -1,0 +1,112 @@
+.footer {
+  @extend %clearfix;
+
+  box-sizing: border-box;
+  height: 120px;
+  padding: 35px 0;
+
+  background-color: $white-color;
+
+  &__column {
+    float: left;
+    width: 33.33%;
+
+    text-align: center;
+  }
+
+  &__social {
+    font-size: 0;
+  }
+
+  &__hashtag {
+    margin-top: 12px;
+
+    font-weight: bold;
+    font-size: 21px;
+    color: $black-color;
+    text-decoration: none;
+  }
+
+  &__copyright {
+    float: right;
+
+    > span {
+      display: inline-block;
+      margin-top: 13px;
+      margin-right: 5px;
+
+      vertical-align: top;
+    }
+  }
+}
+
+.social-btn {
+  position: relative;
+
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  margin: 0 3px;
+
+  font-size: 0;
+
+  background-color: $blue-1-color;
+
+  &:hover {
+    background-color: $blue-2-color;
+  }
+
+  &:active {
+    background-color: $blue-3-color;
+
+    &::before {
+      opacity: 0.3;
+    }
+  }
+
+  &::before {
+    @extend %sprite;
+
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+
+  &--twitter::before {
+    @extend %sprite-icon-twitter;
+  }
+
+  &--fb::before {
+    @extend %sprite-icon-facebook;
+  }
+
+  &--youtube::before {
+    @extend %sprite-icon-youtube;
+  }
+}
+
+.htmlacademy-logo {
+  display: inline-block;
+  margin-top: 5px;
+
+  font-size: 0;
+  vertical-align: top;
+
+  &::before {
+    @extend %sprite;
+    @extend %sprite-icon-htmlacademy;
+
+    content: "";
+  }
+
+  &:hover::before {
+    @extend %sprite-icon-htmlacademy--hover;
+  }
+
+  &:active::before {
+    @extend %sprite-icon-htmlacademy--down;
+  }
+}

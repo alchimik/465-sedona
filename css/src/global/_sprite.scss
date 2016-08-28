@@ -1,0 +1,188 @@
+%sprite {
+  display: block;
+
+  background-image: url("../img/sprites.png");
+  background-repeat: no-repeat;
+}
+
+%sprite-icon-calendar {
+  width: 21px;
+  height: 22px;
+
+  background-position: -4px -4px;
+}
+
+%sprite-icon-calendar--active {
+  width: 21px;
+  height: 22px;
+
+  background-position: -33px -4px;
+}
+
+%sprite-icon-calendar--hover {
+  width: 21px;
+  height: 22px;
+
+  background-position: -62px -4px;
+}
+
+%sprite-icon-checkbox {
+  width: 22px;
+  height: 22px;
+
+  background-position: -91px -4px;
+}
+
+%sprite-icon-checkbox--checked {
+  width: 26px;
+  height: 22px;
+
+  background-position: -121px -4px;
+}
+
+%sprite-icon-down {
+  width: 11px;
+  height: 10px;
+
+  background-position: -155px -4px;
+}
+
+%sprite-icon-down--down {
+  width: 11px;
+  height: 10px;
+
+  background-position: -155px -22px;
+}
+
+%sprite-icon-down--hover {
+  width: 11px;
+  height: 10px;
+
+  background-position: -4px -40px;
+}
+
+%sprite-icon-facebook {
+  width: 10px;
+  height: 19px;
+
+  background-position: -23px -40px;
+}
+
+%sprite-icon-htmlacademy {
+  width: 113px;
+  height: 39px;
+
+  background-position: -41px -40px;
+}
+
+%sprite-icon-htmlacademy--down {
+  width: 113px;
+  height: 39px;
+
+  background-position: -4px -87px;
+}
+
+%sprite-icon-htmlacademy--hover {
+  width: 113px;
+  height: 39px;
+
+  background-position: -174px -4px;
+}
+
+%sprite-icon-minus {
+  width: 12px;
+  height: 3px;
+
+  background-position: -162px -51px;
+}
+
+%sprite-icon-minus--down {
+  width: 12px;
+  height: 3px;
+
+  background-position: -182px -51px;
+}
+
+%sprite-icon-minus--hover {
+  width: 12px;
+  height: 3px;
+
+  background-position: -202px -51px;
+}
+
+%sprite-icon-plus {
+  width: 11px;
+  height: 11px;
+
+  background-position: -222px -51px;
+}
+
+%sprite-icon-plus--down {
+  width: 11px;
+  height: 11px;
+
+  background-position: -241px -51px;
+}
+
+%sprite-icon-plus--hover {
+  width: 11px;
+  height: 11px;
+
+  background-position: -260px -51px;
+}
+
+%sprite-icon-slide {
+  width: 20px;
+  height: 23px;
+
+  background-position: -162px -70px;
+}
+
+%sprite-icon-slide--hover {
+  width: 20px;
+  height: 23px;
+
+  background-position: -190px -70px;
+}
+
+%sprite-icon-star {
+  width: 18px;
+  height: 17px;
+
+  background-position: -218px -70px;
+}
+
+%sprite-icon-twitter {
+  width: 17px;
+  height: 15px;
+
+  background-position: -244px -70px;
+}
+
+%sprite-icon-up {
+  width: 11px;
+  height: 10px;
+
+  background-position: -269px -70px;
+}
+
+%sprite-icon-up--down {
+  width: 11px;
+  height: 10px;
+
+  background-position: -125px -88px;
+}
+
+%sprite-icon-up--hover {
+  width: 11px;
+  height: 10px;
+
+  background-position: -269px -88px;
+}
+
+%sprite-icon-youtube {
+  width: 20px;
+  height: 16px;
+
+  background-position: -125px -106px;
+}

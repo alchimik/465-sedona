@@ -1,0 +1,23 @@
+.main-desc {
+  padding-top: 60px;
+  padding-bottom: 37px;
+
+  text-align: center;
+
+  background-color: $white-color;
+
+  &__header {
+    margin: 0 0 27px;
+
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    font-family: $font-family;
+    color: $black-color;
+  }
+
+  &__why {
+    line-height: 26px;
+    color: $text-gray-color;
+  }
+}

@@ -1,0 +1,110 @@
+@import "catalog/search-form";
+@import "catalog/catalog-header";
+
+@import "catalog/filter-range";
+
+.catalog {
+  background-color: $white-color;
+}
+
+.catalog-item {
+  @extend %clearfix;
+
+  padding: 25px 6% 30px;
+
+  border-top: 1px solid #e5e5e5;
+
+  &:last-child {
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  &__photo {
+    float: left;
+    margin-top: 5px;
+    margin-right: 30px;
+  }
+
+  &__name {
+    display: inline-block;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: black;
+    text-decoration: none;
+
+    &:hover {
+      color: $blue-1-color;
+    }
+
+    &:active {
+      color: #b2b2b2;
+    }
+  }
+
+  &__type {
+    display: inline-block;
+    width: 112px;
+
+    color: $text-gray-color;
+  }
+
+  &__price {
+    color: $text-gray-color;
+  }
+
+  &__detail-link {
+    @extend %btn--blue;
+
+    margin-top: 14px;
+    margin-right: 2px;
+    padding: 3px 17px;
+  }
+
+  &__book-link {
+    @extend %btn--brown;
+
+    margin-top: 14px;
+    margin-right: 2px;
+    padding: 3px 12px;
+  }
+
+  &__description {
+    float: left;
+  }
+
+  &__rate-block {
+    float: right;
+  }
+
+  &__star-block {
+    margin-top: 4px;
+
+    font-size: 0;
+    text-align: right;
+  }
+
+  &__star {
+    display: inline-block;
+    margin-left: 6px;
+
+    font-size: 0;
+
+    &::before {
+      @extend %sprite;
+      @extend %sprite-icon-star;
+
+      content: "";
+    }
+  }
+
+  &__rating {
+    margin-top: 26px;
+    padding: 3px 12px 3px 15px;
+
+    color: #666666;
+
+    background-color: #f2f2f2;
+  }
+}

@@ -1,0 +1,62 @@
+.search-form {
+  @extend %clearfix;
+
+  box-sizing: border-box;
+  min-height: 217px;
+  padding: 25px 6% 0 6%;
+
+  color: $white-color;
+
+  background: #eeeeee url("../img/catalog/search-form__background.jpg") center 50%;
+
+  &__infrastructure {
+    float: left;
+    width: 216.11px;
+    margin-right: 3.24%;
+  }
+
+  &__housing-type {
+    float: left;
+    width: 30%;
+  }
+
+  &__price {
+    float: right;
+    width: 30%;
+  }
+
+  .field-title {
+    margin-bottom: 9px;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+
+.checkbox {
+  position: relative;
+
+  display: block;
+  margin: 26px 0;
+  padding-left: 40px;
+
+  input {
+    display: none;
+
+    &:checked + .checkbox-indicator {
+      @extend %sprite-icon-checkbox--checked;
+    }
+  }
+
+  .checkbox-indicator {
+    @extend %sprite;
+    @extend %sprite-icon-checkbox;
+
+    position: absolute;
+    top: -2px;
+    left: 0;
+
+    display: inline-block;
+  }
+}

@@ -1,0 +1,216 @@
+.index-form-block {
+  padding-top: 56px;
+
+  text-align: center;
+
+  background-color: $white-color;
+
+  &__header {
+    display: block;
+    margin-bottom: 30px;
+
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+  }
+
+  &__description {
+    margin-bottom: 47px;
+
+    line-height: 24px;
+    color: $text-gray-color;
+  }
+
+  &__link {
+    @extend %btn--brown;
+
+    width: 568px;
+    padding: 30px 0;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.index-form-wrapper {
+  position: relative;
+
+  width: 568px;
+  margin: 0 auto;
+}
+
+.index-form {
+  @extend %shadow;
+
+  position: absolute;
+
+  display: none;
+  box-sizing: border-box;
+  width: 568px;
+  height: 395px;
+  margin: 0 auto;
+  padding: 55px;
+
+  background-color: $white-color;
+
+  label {
+    display: inline-block;
+
+    font-weight: bold;
+    text-align: left;
+  }
+
+  input {
+    height: 38px;
+
+    font: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+    border: 0;
+    outline: none;
+
+    &:hover {
+      background-color: #ebebeb;
+    }
+
+    &:focus {
+      background-color: $white-color;
+      outline: 2px solid #e5e5e5;
+    }
+  }
+
+  .column-1 {
+    display: inline-block;
+    width: 108px;
+  }
+
+  &__date-in,
+  &__date-out {
+    position: relative;
+
+    margin-bottom: 29px;
+  }
+
+  &__date-in::after,
+  &__date-out::after {
+    @extend %sprite;
+    @extend %sprite-icon-calendar;
+
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 9px;
+
+    &:hover {
+      @extend %sprite-icon-calendar--hover;
+    }
+
+    &:active {
+      @extend %sprite-icon-calendar--active;
+    }
+  }
+
+  .date-field {
+    box-sizing: border-box;
+    width: 346px;
+    padding: 0 40px 0 15px;
+  }
+
+  .field-child-place-label {
+    margin-right: 22px;
+    margin-left: 50px;
+  }
+
+  .from-submit {
+    @extend %btn--blue;
+
+    width: 458px;
+    padding: 16px 0;
+
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .index-form__persons {
+    margin-bottom: 55px;
+  }
+}
+
+.capacity {
+  position: relative;
+
+  display: inline-block;
+
+  &__input {
+    box-sizing: border-box;
+    width: 38px;
+    height: 38px;
+    margin: 0 38px;
+
+    text-align: center;
+  }
+
+  .count-inc,
+  .count-dec {
+    position: absolute;
+    top: 0;
+
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+
+    font-size: 0;
+
+    background-color: #f2f2f2;
+    border: 0;
+
+    &::after {
+      @extend %sprite;
+
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover {
+      background-color: #92bdd8;
+    }
+  }
+
+  .count-inc {
+    right: 0;
+
+    &::after {
+      @extend %sprite-icon-plus;
+    }
+
+    &:hover::after {
+      @extend %sprite-icon-plus--hover;
+    }
+
+    &:active::after {
+      @extend %sprite-icon-plus--down;
+    }
+  }
+
+  .count-dec {
+    left: 0;
+
+    &::after {
+      @extend %sprite-icon-minus;
+    }
+
+    &:hover::after {
+      @extend %sprite-icon-minus--hover;
+    }
+
+    &:active::after {
+      @extend %sprite-icon-minus--down;
+    }
+  }
+}

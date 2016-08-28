@@ -2,37 +2,50 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0">
     <title>Седона</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 
 <div class="main">
     <div class="top-panel">
-        <ul class="main-navigation">
-            <li><a href="#">Информация</a></li>
-            <li><a href="#">Фото и видео</a></li>
-            <li></li>
-            <li><a href="#">Карта штата</a></li>
-            <li><a href="#">Гостиница</a></li>
+        <ul class="main-nav">
+            <li class="main-nav__item main-nav__item--left">
+                <a class="main-nav__link">Информация</a>
+            </li>
+            <li class="main-nav__item main-nav__item--left">
+                <a class="main-nav__link" href="#">Фото и видео</a>
+            </li>
+            <li class="main-nav__item main-nav__item--empty"></li>
+            <li class="main-nav__item main-nav__item--right">
+                <a class="main-nav__link" href="#">Карта штата</a>
+            </li>
+            <li class="main-nav__item main-nav__item--right">
+                <a class="main-nav__link" href="#">Гостиницы</a>
+            </li>
         </ul>
 
-        <div class="top-panel__logo-box">
-            <a href="#">
-                <img src="img/main-navigation__logo.png" alt="Седона" width="138" height="70">
+        <div class="top-panel__logo-block">
+            <a>
+                <img src="img/main-navigation__logo.png" alt="Седона лого" width="138" height="70">
             </a>
         </div>
     </div>
 
     <h1 class="main-header">
         <span class="main-header__text hide">Седона</span>
-        <img class="main-header__welcome" src="img/index/main-header__welcome.png" width="256" height="86">
-        <img class="main-header__sedona" src="img/index/main-header__sedona.png" width="458" height="78">
-        <img class="main-header__grand-canyon" src="img/index/main-header__grand-canyon.png" width="296" height="80">
+        <img class="main-header__welcome" src="img/index/main-header__welcome.png" width="256" height="86"
+             alt="Welcome to the gorgeous">
+        <img class="main-header__sedona" src="img/index/main-header__sedona.png" width="458" height="78"
+             alt="Sedona">
+        <img class="main-header__grand-canyon" src="img/index/main-header__grand-canyon.png" width="296" height="80"
+            alt="Because the Grand Canyon sucks!">
 
         <img class="main-header__bottom-pattern" src="img/index/big-header-background__bottom-pattern.png"
-             width="1200" height="57">
+             width="1200" height="57" alt="">
     </h1>
 
     <section class="main-desc">
@@ -46,43 +59,51 @@
     </section>
 
     <section class="big-feature big-feature--real-life">
-        <div class="feature">
-            <h2 class="feature__name">Настоящий город</h2>
+        <div class="feature feature--big">
+            <h2 class="feature__name">Настоящий городок</h2>
             <div class="feature__number">&ndash; №1 &ndash;</div>
             <p class="feature__description">
                 Седона - не аттракцион для туристов, там течет своя жизнь
             </p>
         </div>
 
-        <div class="big-feature__photo">
-            <img src="img/index/real-life__photo.jpg" width="800" height="400">
+        <div class="feature-photo">
+            <img class="feature-photo__img feature-photo__img--real-life" src="img/index/real-life__photo.jpg"
+                 width="800" height="400" alt="real life photo">
         </div>
     </section>
 
     <ul class="real-life">
-        <li>
-            <img src="img/index/real-life__housing-icon.png" width="75" height="72">
+        <li class="real-life__item">
+            <div class="real-life__icon">
+                <img src="img/index/real-life__housing-icon.png" width="75" height="72" alt="Жилье фото">
+            </div>
             <h3 class="real-life__name">Жилье</h3>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            <p class="real-life__desc">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </li>
-        <li>
-            <img src="img/index/real-life__food-icon.png" width="74" height="70">
+        <li class="real-life__item">
+            <div class="real-life__icon">
+                <img src="img/index/real-life__food-icon.png" width="74" height="70" alt="Еда фото">
+            </div>
             <h3 class="real-life__name">Еда</h3>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="real-life__desc">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li>
-            <img src="img/index/real-life__souvenirs-icon.png" width="64" height="76">
+        <li class="real-life__item">
+            <div class="real-life__icon">
+                <img src="img/index/real-life__souvenirs-icon.png" width="64" height="76" alt="Сувениры фото">
+            </div>
             <h3 class="real-life__name">Сувениры</h3>
-            <p>Не только китайского, но и местного производства!</p>
+            <p class="real-life__desc">Не только китайского, но и местного производства!</p>
         </li>
     </ul>
 
     <section class="big-feature big-feature--devil-bridge">
-        <div class="big-feature__photo">
-            <img src="img/index/devil-bridge__photo.jpg" width="800" height="400">
+        <div class="feature-photo">
+            <img class="feature-photo__img feature-photo__img--devil-bridge" src="img/index/devil-bridge__photo.jpg"
+                 width="800" height="400" alt="Мост дьявола фото">
         </div>
 
-        <div class="feature">
+        <div class="feature feature--big">
             <h2 class="feature__name">Там есть мост дьявола</h2>
             <div class="feature__number">&ndash; №2 &ndash;</div>
             <p class="feature__description">
@@ -103,8 +124,7 @@
             <h2 class="feature__name">Красивая дорога</h2>
             <div class="feature__number">&ndash; №4 &ndash;</div>
             <p class="feature__description">
-                Ехать в седону из
-                <nobr>Лас-Вегаса</nobr>
+                Ехать в седону из Лас-Вегаса
                 совсем не скучно!
             </p>
         </li>
@@ -117,64 +137,69 @@
         </li>
     </ul>
 
-    <section class="form-intro">
-        <b class="form-intro__header">Заинтересовались?</b>
+    <section class="index-form-block">
+        <b class="index-form-block__header">Заинтересовались?</b>
 
-        <p class="form-intro__description">
+        <p class="index-form-block__description">
             Укажите предполагаемые даты поездки, <br>
             И мы покажем Вам лучшие предложения гостиниц в Седоне
         </p>
 
-        <a class="form-intro__link" href="#">
-            <strong>Поиск гостиницы в Седоне</strong>
-        </a>
+        <div class="index-form-wrapper">
+            <a class="index-form-block__link" href="#">
+                <strong>Поиск гостиницы в Седоне</strong>
+            </a>
+
+            <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="index-form__date-in">
+                    <label class="column-1" for="field-date-in">Дата заезда:</label>
+                    <input class="date-field" id="field-date-in" type="text" name="date_in" value="24 апреля 2016">
+                </div>
+
+                <div class="index-form__date-out">
+                    <label class="column-1" for="field-date-out">Дата выезда:</label>
+                    <input class="date-field" id="field-date-out" type="text" name="date_out" value="4 июля 2016">
+                </div>
+
+                <div class="index-form__persons">
+                    <label class="column-1" for="field-adult-place">Взрослые:</label>
+                    <div class="capacity">
+                        <div class="count-dec">-</div>
+                        <input class="capacity__input" id="field-adult-place" type="text" name="adult_place" value="2">
+                        <div class="count-inc">+</div>
+                    </div>
+
+                    <label class="field-child-place-label" for="field-child-place">Дети:</label>
+                    <div class="capacity">
+                        <div class="count-dec">-</div>
+                        <input class="capacity__input" id="field-child-place" type="text" name="child_place" value="0">
+                        <div class="count-inc">+</div>
+                    </div>
+                </div>
+
+                <button class="from-submit" type="submit">Найти</button>
+            </form>
+        </div>
     </section>
 
-    <section class="bottom-section">
-        <form action="https://echo.htmlacademy.ru" method="post">
-            <!-- TO_DO переписать без таблиц -->
-            <div>
-                <label class="column-1" for="field-date-in">Дата заезда:</label>
-                <input class="date-field" id="field-date-in" type="date" name="date_in" value="24 апреля 2016">
-            </div>
-
-            <div>
-                <label class="column-1" for="field-date-out">Дата выезда:</label>
-                <input class="date-field" id="field-date-out" type="date" name="date_out" value="4 июля 2016">
-            </div>
-
-            <div>
-                <label class="column-1" for="field-adult-place">Взрослые:</label>
-                <input id="field-adult-place" type="number" name="adult_place" value="2">
-
-                <label for="field-child-place">
-                    Дети:
-                </label>
-                <input id="field-child-place" type="number" name="child_place" value="0">
-            </div>
-
-            <button class="from-submit" type="submit">Найти</button>
-        </form>
-    </section>
+    <section class="bottom-section"></section>
 
     <footer class="footer footer--index">
-        <a class="footer-column footer__hashtag" href="#">#visitsedona</a>
+        <a class="footer__column footer__hashtag" href="#">#visitsedona</a>
 
-        <div class="footer-column footer__social">
-            links
-            <a class="social-btn social-btn--twitter" href="#"></a>
-            <a class="social-btn social-btn--fb" href="#"></a>
-            <a class="social-btn social-btn--youtube" href="#"></a>
+        <div class="footer__column footer__social">
+            <a class="social-btn social-btn--twitter" href="#">twitter</a>
+            <a class="social-btn social-btn--fb" href="#">facebook</a>
+            <a class="social-btn social-btn--youtube" href="#">youtube</a>
         </div>
 
-        <div class="footer-column footer__copyright">
-            <span>Website by:</span>
-            <a href="https://htmlacademy.ru">
-                <img src="img/footer__htmlacademy-logo.png" alt="htmlacademy.ru" width="113" height="39">
-            </a>
+        <div class="footer__column footer__copyright">
+            <span>Website by</span>
+            <a class="htmlacademy-logo" href="https://htmlacademy.ru">htmlacademy</a>
         </div>
     </footer>
 </div>
-
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
