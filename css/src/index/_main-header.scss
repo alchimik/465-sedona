@@ -22,13 +22,17 @@
     margin: 0 auto;
   }
 
-  &__bottom-pattern {
+  &::after {
+    content: "";
     position: absolute;
     bottom: 0;
 
     display: block;
     width: 100%;
-    height: auto;
-    margin-top: 23px;
+    height: 60px;
+
+    background: transparent url("../img/index/big-header-background__bottom-pattern.png") no-repeat;
+    background-position-y: bottom;
+    background-size: 100% auto;
   }
 }

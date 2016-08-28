@@ -1,15 +1,6 @@
-$top-panel-height: 56px;
-
-.top-panel__logo-block {
-  height: $top-panel-height;
-  margin-top: -$top-panel-height;
-
-  text-align: center;
-}
-
 .main-nav {
   box-sizing: border-box;
-  height: $top-panel-height;
+  height: 56px;
   margin: 0;
   padding: 17px 0 0;
 
@@ -70,8 +61,17 @@ $top-panel-height: 56px;
   text-align: right;
 }
 
-.main-nav__item--empty {
+.main-nav__item--logo {
+  position: relative;
   width: 8%;
+
+  a {
+    position: absolute;
+    left: 50%;
+    top: -32px;
+    transform: translate(-50%, 0);
+    z-index: 10;
+  }
 }
 
 
