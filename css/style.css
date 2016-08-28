@@ -195,12 +195,12 @@ body {
   width: 8%; }
   .main-nav__item--logo a {
     position: absolute;
-    left: 50%;
     top: -32px;
+    left: 50%;
+    z-index: 10;
     -webkit-transform: translate(-50%, 0);
         -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    z-index: 10; }
+            transform: translate(-50%, 0); }
 
 .footer {
   box-sizing: border-box;

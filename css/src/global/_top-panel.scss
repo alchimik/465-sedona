@@ -63,14 +63,16 @@
 
 .main-nav__item--logo {
   position: relative;
+
   width: 8%;
 
   a {
     position: absolute;
-    left: 50%;
     top: -32px;
-    transform: translate(-50%, 0);
+    left: 50%;
     z-index: 10;
+
+    transform: translate(-50%, 0);
   }
 }
 
