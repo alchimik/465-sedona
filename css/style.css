@@ -428,7 +428,7 @@ body {
 .feature-photo {
   position: relative;
   float: left;
-  width: 66.66%;
+  width: 66.6%;
   height: 100%;
 }
 
@@ -460,7 +460,7 @@ body {
 .feature {
   display: block;
   float: left;
-  width: 33.33%;
+  width: 33.4%;
   text-align: center;
 }
 
