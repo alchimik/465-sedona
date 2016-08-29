@@ -106,7 +106,7 @@
     @extend %sprite-icon-htmlacademy--hover;
   }
 
-  &:active::before {
+  &:hover:active::before {
     @extend %sprite-icon-htmlacademy--down;
   }
 }

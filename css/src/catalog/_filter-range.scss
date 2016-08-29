@@ -1,5 +1,5 @@
 .filter-range {
-  width: 330px;
+  width: 100%;
   margin: 0 auto;
 
   text-transform: uppercase;
@@ -8,7 +8,7 @@
 .price-controls {
   position: relative;
 
-  height: 36px;
+  height: 32px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -34,7 +34,7 @@
   display: inline-block;
 
   font-size: 14px;
-  line-height: 38px;
+  line-height: 31px;
   vertical-align: top;
 
   cursor: pointer;
@@ -42,12 +42,13 @@
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
+  box-sizing: border-box;
+  width: 50%;
+  padding-left: 25%;
 }
 
 .price-controls input {
-  width: 50px;
+  width: 45px;
   margin: 0;
 
   font: inherit;
@@ -105,23 +106,34 @@
 
 .btn-transparent {
   display: block;
+  box-sizing: border-box;
+  width: 138px;
   margin: 0 auto;
   padding: 6px 35px;
 
-  font-size: 14px;
-  line-height: 20px;
+  font: inherit;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: inherit;
 
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
   outline: none;
   cursor: pointer;
+
+  &:hover {
+    color: #000000;
+
+    background: #ffffff;
+  }
 }
 
-.btn-transparent:hover {
-  color: #000000;
+.min-price-title {
+  display: inline-block;
+  margin-left: -15px;
+}
 
-  background: #ffffff;
+.max-price-title {
+  display: inline-block;
+  margin-left: -25px;
 }

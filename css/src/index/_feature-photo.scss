@@ -5,6 +5,10 @@
   width: 66.66%;
   height: 100%;
 
+  .big-feature--real-life & {
+    float: right;
+  }
+
   &__img {
     position: absolute;
     top: 50%;

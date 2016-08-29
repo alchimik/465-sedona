@@ -104,10 +104,10 @@
 
     &:hover {
       @extend %sprite-icon-calendar--hover;
-    }
 
-    &:active {
-      @extend %sprite-icon-calendar--active;
+      &:active {
+        @extend %sprite-icon-calendar--active;
+      }
     }
   }
 

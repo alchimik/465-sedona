@@ -10,8 +10,8 @@ gulp.task('css:build', function () {
 
     return gulp.src('css/src/style.scss')
         .pipe(sourcemaps.init())
-        .pipe(sass().on('error', sass.logError))
-        .pipe(autoprefixer())
+        .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+        // .pipe(autoprefixer())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('css'));
 });

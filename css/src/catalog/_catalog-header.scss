@@ -57,4 +57,52 @@
 
 .catalog-header__sort-dir {
   float: right;
+  margin-top: 5px;
+}
+
+.sort-dir__link {
+  @extend %sprite;
+
+  display: inline-block;
+  margin-left: 7px;
+
+  &.asc {
+    @extend %sprite-icon-up;
+
+    &.active {
+      @extend %sprite-icon-up--down;
+
+      :hover {
+        @extend %sprite-icon-up--hover;
+      }
+    }
+
+    &:hover {
+      @extend %sprite-icon-up--hover;
+
+      &:active {
+        @extend %sprite-icon-up--down;
+      }
+    }
+  }
+
+  &.desc {
+    @extend %sprite-icon-down;
+
+    &.active {
+      @extend %sprite-icon-down--down;
+
+      :hover {
+        @extend %sprite-icon-down--hover;
+      }
+    }
+
+    &:hover {
+      @extend %sprite-icon-down--hover;
+
+      &:active {
+        @extend %sprite-icon-down--down;
+      }
+    }
+  }
 }

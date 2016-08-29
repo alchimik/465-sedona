@@ -3,7 +3,12 @@
 @import "index/feature";
 @import "index/real-life";
 @import "index/index-form-block";
-@import "index/bottom-section";
+
+.map-section {
+  height: 588px;
+
+  background: #eeeeee url("../img/static-map.jpg");
+}
 
 .footer.footer--index {
   margin-top: -115px;

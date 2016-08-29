@@ -7,6 +7,10 @@
 
   text-align: center;
 
+  .big-feature--real-life & {
+    float: right;
+  }
+
   &__name {
     display: block;
     width: 151px;
@@ -38,8 +42,6 @@
 
   color: $white-color;
 
-  background-color: $blue-1-color;
-
   .feature__name {
     margin-top: 54px;
   }
@@ -52,6 +54,8 @@
   overflow: hidden;
 
   text-align: center;
+
+  background-color: $blue-1-color;
 
   & .feature__number,
   & .feature__description {

@@ -82,8 +82,14 @@
             <div class="filter-range">
                 <div class="field-title">Стоимость в сутки (р):</div>
                 <div class="price-controls">
-                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                    <label class="min-price">
+                        <span class="min-price-title">от</span>
+                        <input type="text" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">
+                        <span class="max-price-title">до</span>
+                        <input type="text" name="max-price" value="3000">
+                    </label>
                 </div>
                 <div class="range-controls">
                     <div class="scale">
@@ -118,8 +124,8 @@
             </div>
             <div class="catalog-header__sort-dir">
                 <!-- TO_DO как-то мутно получилось -->
-                <a href="#" class="sort-dir__link sort-dir__asc"></a>
-                <a href="#" class="sort-dir__link sort-dir__desc sorting-dir__link--active"></a>
+                <a href="#" class="sort-dir__link asc"></a>
+                <a href="#" class="sort-dir__link desc active"></a>
             </div>
         </div>
 
