@@ -1,0 +1,60 @@
+$black-color: #000000;
+$white-color: #ffffff;
+$blue-1-color: #81b3d2;
+$blue-2-color: #669ec0;
+$blue-3-color: #5496bd;
+$light-gray: #eeeeee;
+$background-gray-color: #f2f2f2;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$font-family: "PT Sans", "Arial", sans-serif;
+$text-gray-color: #333333;
+
+body {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $font-family;
+  color: $black-color;
+  text-transform: uppercase;
+
+  background-color: $background-gray-color;
+}
+
+.hide {
+  display: none;
+}
+
+%clearfix {
+  &::after {
+    content: "";
+
+    display: table;
+    clear: both;
+  }
+}
+
+%shadow {
+  box-shadow: 0 0 20px $shadow-color;
+}
+
+.main {
+  @extend %shadow;
+
+  min-width: 768px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@import "global/btn";
+@import "global/sprite";
+
+@import "global/top-panel";
+@import "global/footer";
+
+@import "index";
+@import "catalog";
+
+
+img[src*="souvenirs"] {
+  transform: translate(0, -4px);
+}

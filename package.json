@@ -1,0 +1,28 @@
+{
+  "name": "465-sedona_gulp",
+  "version": "0.4.0",
+  "description": "Личный проект «Седона». Репозиторий создан для обучения на интенсивном онлайн‑курсе «Базовый HTML и CSS» от HTML Academy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alchimik/465-sedona.git"
+  },
+  "author": "alchimik",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alchimik/465-sedona/issues"
+  },
+  "homepage": "https://github.com/alchimik/465-sedona#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^2.0.12",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^2.0.0"
+  }
+}

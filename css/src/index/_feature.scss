@@ -1,0 +1,81 @@
+@import "feature-photo";
+
+.feature {
+  display: block;
+  float: left;
+  width: 33.33%;
+
+  text-align: center;
+
+  .big-feature--real-life & {
+    float: right;
+  }
+
+  &__name {
+    display: block;
+    width: 151px;
+    margin: 0 auto 25px;
+
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    font-family: $font-family;
+  }
+
+  &__number {
+    margin-bottom: 20px;
+
+    color: $text-gray-color;
+  }
+
+  &__description {
+    width: 70%;
+    margin: 0 auto;
+
+    color: $text-gray-color;
+  }
+}
+
+.feature--big {
+  width: 33.4%;
+  height: 100%;
+
+  color: $white-color;
+
+  .feature__name {
+    margin-top: 55px;
+  }
+
+  .feature__description {
+    width: 80%;
+  }
+}
+
+.big-feature {
+  @extend %clearfix;
+
+  height: 256px;
+  overflow: hidden;
+
+  text-align: center;
+
+  background-color: $blue-1-color;
+
+  & .feature__number,
+  & .feature__description {
+    color: $white-color;
+  }
+}
+
+.feature-list {
+  @extend %clearfix;
+
+  box-sizing: border-box;
+  min-height: 256px;
+  margin: 0;
+  padding: 47px 0 0;
+
+  list-style: none;
+
+  background-color: $light-gray;
+}

@@ -1,0 +1,49 @@
+%btn {
+  display: inline-block;
+
+  font: inherit;
+  font-weight: bold;
+  vertical-align: top;
+  text-align: center;
+  color: $white-color;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  border: 0;
+  outline: none;
+  cursor: default;
+}
+
+%btn--blue {
+  @extend %btn;
+
+  color: $white-color;
+
+  background-color: $blue-1-color;
+
+  &:hover {
+    background-color: $blue-2-color;
+  }
+
+  &:active {
+    color: #88b6d1;
+
+    background-color: $blue-3-color;
+  }
+}
+
+%btn--brown {
+  @extend %btn;
+
+  background-color: #766357;
+
+  &:hover {
+    background-color: #604e43;
+  }
+
+  &:active {
+    color: #766860;
+
+    background-color: #503e33;
+  }
+}

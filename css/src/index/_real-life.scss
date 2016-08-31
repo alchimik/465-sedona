@@ -1,0 +1,41 @@
+.real-life {
+  @extend %clearfix;
+
+  height: 270px;
+  margin: 0;
+  padding: 60px 0 0 0;
+
+  list-style: none;
+
+  background-color: $white-color;
+
+  &__item {
+    display: block;
+    float: left;
+    width: 33.33%;
+
+    text-align: center;
+  }
+
+  &__icon {
+    height: 90px;
+  }
+
+  &__name {
+    margin-top: 11px;
+    margin-bottom: 24px;
+
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 21px;
+    font-family: $font-family;
+    color: $black-color;
+  }
+
+  &__desc {
+    width: 75%;
+    margin: 0 auto;
+
+    color: $text-gray-color;
+  }
+}

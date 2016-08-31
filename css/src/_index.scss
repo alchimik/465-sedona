@@ -1,0 +1,17 @@
+@import "index/main-header";
+@import "index/main-desc";
+@import "index/feature";
+@import "index/real-life";
+@import "index/index-form-block";
+
+.map-section {
+  height: 588px;
+
+  background: #eeeeee url("../img/static-map.jpg") center center;
+}
+
+.footer.footer--index {
+  margin-top: -115px;
+
+  background-color: rgba(256, 256, 256, 0.9);
+}
