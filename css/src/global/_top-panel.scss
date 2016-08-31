@@ -1,8 +1,8 @@
 .main-nav {
   box-sizing: border-box;
-  height: 56px;
+  min-height: 56px;
   margin: 0;
-  padding: 17px 0 0;
+  padding: 0;
 
   list-style: none;
   font-size: 0;
@@ -13,8 +13,10 @@
 .main-nav__item {
   display: inline-block;
   width: 20%;
+  padding: 17px 0;
 
   font-size: 14px;
+  vertical-align: top;
   text-align: center;
 
 
@@ -68,7 +70,7 @@
 
   a {
     position: absolute;
-    top: -32px;
+    top: 0;
     left: 50%;
     z-index: 10;
 

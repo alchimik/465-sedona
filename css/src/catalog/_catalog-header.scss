@@ -39,6 +39,8 @@
 
     &:hover {
       color: $blue-1-color;
+
+      border-bottom: 1px dotted $blue-1-color;
     }
 
     &:active {
@@ -69,14 +71,6 @@
   &.asc {
     @extend %sprite-icon-up;
 
-    &.active {
-      @extend %sprite-icon-up--down;
-
-      :hover {
-        @extend %sprite-icon-up--hover;
-      }
-    }
-
     &:hover {
       @extend %sprite-icon-up--hover;
 
@@ -89,20 +83,32 @@
   &.desc {
     @extend %sprite-icon-down;
 
-    &.active {
-      @extend %sprite-icon-down--down;
-
-      :hover {
-        @extend %sprite-icon-down--hover;
-      }
-    }
-
     &:hover {
       @extend %sprite-icon-down--hover;
 
       &:active {
         @extend %sprite-icon-down--down;
       }
+    }
+  }
+}
+
+.sort-dir__link.active {
+  &.asc {
+    @extend %sprite-icon-up--down;
+
+    &:hover,
+    &:hover:active {
+      @extend %sprite-icon-up--hover;
+    }
+  }
+
+  &.desc {
+    @extend %sprite-icon-down--down;
+
+    &:hover,
+    &:hover:active {
+      @extend %sprite-icon-down--hover;
     }
   }
 }

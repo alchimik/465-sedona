@@ -3,13 +3,13 @@
 
   box-sizing: border-box;
   height: 120px;
-  padding: 35px 0;
+  padding: 36px 0;
 
   background-color: $white-color;
 
   &__column {
     float: left;
-    width: 33.33%;
+    width: 33.3%;
 
     text-align: center;
   }
@@ -33,7 +33,7 @@
     > span {
       display: inline-block;
       margin-top: 13px;
-      margin-right: 5px;
+      margin-right: 3px;
 
       vertical-align: top;
     }

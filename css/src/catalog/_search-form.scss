@@ -42,15 +42,7 @@
   margin: 25px 0;
   padding-left: 41px;
 
-  input {
-    display: none;
-
-    &:checked + .checkbox-indicator {
-      @extend %sprite-icon-checkbox--checked;
-    }
-  }
-
-  .checkbox-indicator {
+  &__indicator {
     @extend %sprite;
     @extend %sprite-icon-checkbox;
 
@@ -59,5 +51,21 @@
     left: 0;
 
     display: inline-block;
+  }
+
+  &:hover {
+    color: #cccccc;
+
+    &:active {
+      color: #666666;
+    }
+  }
+}
+
+.checkbox__input {
+  display: none;
+
+  &:checked + .checkbox__indicator {
+    @extend %sprite-icon-checkbox--checked;
   }
 }

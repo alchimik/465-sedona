@@ -7,7 +7,7 @@
 
   &__header {
     display: block;
-    margin-bottom: 30px;
+    margin-bottom: 31px;
 
     font-weight: bold;
     font-size: 30px;
@@ -15,7 +15,7 @@
   }
 
   &__description {
-    margin-bottom: 47px;
+    margin-bottom: 46px;
 
     line-height: 24px;
     color: $text-gray-color;
@@ -122,7 +122,7 @@
     margin-left: 50px;
   }
 
-  .from-submit {
+  .form-submit {
     @extend %btn--blue;
 
     width: 458px;
@@ -170,14 +170,10 @@
 
       content: "";
       position: absolute;
-      top: 50%;
-      left: 50%;
-
-      transform: translate(-50%, -50%);
     }
 
     &:hover {
-      background-color: #92bdd8;
+      background-color: #ebebeb;
     }
   }
 
@@ -186,14 +182,17 @@
 
     &::after {
       @extend %sprite-icon-plus;
+
+      top: 14px;
+      left: 13px;
     }
 
     &:hover::after {
       @extend %sprite-icon-plus--hover;
-    }
 
-    &:active::after {
-      @extend %sprite-icon-plus--down;
+      &:active::after {
+        @extend %sprite-icon-plus--down;
+      }
     }
   }
 
@@ -202,14 +201,17 @@
 
     &::after {
       @extend %sprite-icon-minus;
+
+      top: 18px;
+      left: 13px;
     }
 
     &:hover::after {
       @extend %sprite-icon-minus--hover;
-    }
 
-    &:active::after {
-      @extend %sprite-icon-minus--down;
+      &:active::after {
+        @extend %sprite-icon-minus--down;
+      }
     }
   }
 }

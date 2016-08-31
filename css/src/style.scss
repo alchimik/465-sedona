@@ -34,7 +34,7 @@ body {
 }
 
 %shadow {
-  box-shadow: 0 0 16px $shadow-color;
+  box-shadow: 0 0 20px $shadow-color;
 }
 
 .main {
@@ -53,3 +53,8 @@ body {
 
 @import "index";
 @import "catalog";
+
+
+img[src*="souvenirs"] {
+  transform: translate(0, -4px);
+}

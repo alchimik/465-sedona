@@ -29,7 +29,7 @@
   }
 
   &__description {
-    width: 78%;
+    width: 70%;
     margin: 0 auto;
 
     color: $text-gray-color;
@@ -37,13 +37,17 @@
 }
 
 .feature--big {
-  width: 33.34%;
+  width: 33.4%;
   height: 100%;
 
   color: $white-color;
 
   .feature__name {
-    margin-top: 54px;
+    margin-top: 55px;
+  }
+
+  .feature__description {
+    width: 80%;
   }
 }
 
