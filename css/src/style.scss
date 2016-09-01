@@ -54,7 +54,18 @@ body {
 @import "index";
 @import "catalog";
 
-
+// костыли для лучшего соответствия макету
 img[src*="souvenirs"] {
   transform: translate(0, -4px);
 }
+
+@media (min-width: 950px) {
+  .filter-range .field-title {
+    margin-left: -10px;
+  }
+
+  .btn-transparent {
+    margin-left: 84px;
+  }
+}
+

@@ -92,25 +92,6 @@
     margin-bottom: 29px;
   }
 
-  &__date-in::after,
-  &__date-out::after {
-    @extend %sprite;
-    @extend %sprite-icon-calendar;
-
-    content: "";
-    position: absolute;
-    top: 8px;
-    right: 9px;
-
-    &:hover {
-      @extend %sprite-icon-calendar--hover;
-
-      &:active {
-        @extend %sprite-icon-calendar--active;
-      }
-    }
-  }
-
   .date-field {
     box-sizing: border-box;
     width: 346px;
@@ -134,6 +115,23 @@
 
   .index-form__persons {
     margin-bottom: 55px;
+  }
+}
+
+.calendar-icon {
+  @extend %sprite;
+  @extend %sprite-icon-calendar;
+
+  position: absolute;
+  top: 8px;
+  right: 9px;
+
+  &:hover {
+    @extend %sprite-icon-calendar--hover;
+
+    &:active {
+      @extend %sprite-icon-calendar--active;
+    }
   }
 }
 
