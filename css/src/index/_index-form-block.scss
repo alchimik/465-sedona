@@ -56,6 +56,7 @@
     display: inline-block;
 
     font-weight: bold;
+    line-height: 26px;
     text-align: left;
   }
 
@@ -64,6 +65,7 @@
 
     font: inherit;
     font-weight: bold;
+    line-height: 26px;
     text-transform: uppercase;
 
     background-color: #f2f2f2;
@@ -126,6 +128,10 @@
   top: 8px;
   right: 9px;
 
+  background-color: transparent;
+  border: none;
+  outline: none;
+
   &:hover {
     @extend %sprite-icon-calendar--hover;
 
@@ -170,8 +176,10 @@
       position: absolute;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: #ebebeb;
+      outline: none;
     }
   }
 

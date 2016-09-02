@@ -14,7 +14,7 @@
 
   &__sort-field {
     float: left;
-    margin-top: 5px;
+    margin-top: 4px;
 
     font-size: 12px;
   }
@@ -25,6 +25,7 @@
   padding-left: 36px;
 
   list-style: none;
+  line-height: 18px;
 
   &__item {
     display: inline;
@@ -32,21 +33,24 @@
   }
 
   &__link {
-    color: #b2b2b2;
+    color: black;
     text-decoration: none;
 
     border-bottom: 1px dotted $blue-1-color;
+    opacity: 0.3;
 
     &:hover {
       color: $blue-1-color;
 
       border-bottom: 1px dotted $blue-1-color;
+      opacity: 1;
     }
 
     &:active {
       color: $black-color;
 
       border-bottom: 0;
+      opacity: 1;
     }
   }
 }
@@ -55,6 +59,7 @@
   color: $blue-1-color;
 
   border-bottom: 0;
+  opacity: 1;
 }
 
 .catalog-header__sort-dir {

@@ -28,7 +28,7 @@ gulp.task('css:minify', function () {
 });
 
 gulp.task('css:watch', function () {
-    gulp.watch('css/src/**', ['css:build', 'css:minify'])
+    gulp.watch('css/src/**', ['css:build'])
 });
 
 

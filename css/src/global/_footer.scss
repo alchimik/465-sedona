@@ -15,10 +15,13 @@
   }
 
   &__social {
+    height: 48px;
+
     font-size: 0;
   }
 
   &__hashtag {
+    display: inline-block;
     margin-top: 12px;
 
     font-weight: bold;
@@ -49,6 +52,7 @@
   margin: 0 3px;
 
   font-size: 0;
+  vertical-align: top;
 
   background-color: $blue-1-color;
 

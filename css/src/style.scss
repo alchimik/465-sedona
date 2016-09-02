@@ -69,3 +69,24 @@ img[src*="souvenirs"] {
   }
 }
 
+@media (max-width: 800px) {
+  .main-header {
+    background-size: 100%;
+  }
+
+  .feature--big .feature__name {
+    margin-top: 47px;
+  }
+
+  .feature--big .feature__description {
+    width: 75%;
+  }
+
+  .range-controls {
+    margin-left: 5px;
+  }
+
+  .range-toggle-max {
+    left: 71%;
+  }
+}
