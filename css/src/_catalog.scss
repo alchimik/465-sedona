@@ -31,6 +31,7 @@
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    vertical-align: baseline;
     color: black;
     text-decoration: none;
 
@@ -47,6 +48,7 @@
     display: inline-block;
     width: 112px;
 
+    vertical-align: baseline;
     color: $text-gray-color;
   }
 
@@ -79,6 +81,7 @@
   }
 
   &__star-block {
+    height: 25px;
     margin-top: 4px;
 
     font-size: 0;
@@ -90,6 +93,7 @@
     margin-left: 6px;
 
     font-size: 0;
+    vertical-align: baseline;
 
     &::before {
       @extend %sprite;
@@ -100,7 +104,7 @@
   }
 
   &__rating {
-    margin-top: 26px;
+    margin-top: 39px;
     padding: 3px 12px 3px 15px;
 
     color: #666666;
