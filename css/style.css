@@ -858,6 +858,7 @@ body {
 
 .sort-dir__link {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: 7px;
 }
 
@@ -976,11 +977,13 @@ body {
 
 .min-price-title {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: -15px;
 }
 
 .max-price-title {
   display: inline-block;
+  vertical-align: baseline;
   margin-left: -25px;
 }
 
