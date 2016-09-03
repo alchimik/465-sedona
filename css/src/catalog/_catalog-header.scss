@@ -17,6 +17,7 @@
     margin-top: 4px;
 
     font-size: 12px;
+    line-height: 18px;
   }
 }
 
@@ -33,24 +34,21 @@
   }
 
   &__link {
-    color: black;
+    color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
 
     border-bottom: 1px dotted $blue-1-color;
-    opacity: 0.3;
 
     &:hover {
       color: $blue-1-color;
 
       border-bottom: 1px dotted $blue-1-color;
-      opacity: 1;
     }
 
     &:active {
       color: $black-color;
 
       border-bottom: 0;
-      opacity: 1;
     }
   }
 }
@@ -59,7 +57,6 @@
   color: $blue-1-color;
 
   border-bottom: 0;
-  opacity: 1;
 }
 
 .catalog-header__sort-dir {
